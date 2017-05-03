@@ -110,32 +110,114 @@ li=>img {
     font-size: 35px;
     letter-spacing: 2px;
 }
+
+
 /*Work*/
-#work{
-   text-align: center;
-   padding: 70px 7px;
+
+#work {
+    text-align: center;
+    padding: 70px 7px;
 }
 
-
-
-.box-work img{
+.box-work img {
     max-width: 100%;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.box-work img:hover {opacity: 0.5;}
-
-.text-work{
-   font-size: 35px;
-   letter-spacing: 2px;
+.box-work img:hover {
+    opacity: 0.5;
 }
 
+.text-work {
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+
+/*Modal*/
+
+
+/* El Modal (fondo) */
+
+.modal {
+    display: none;
+    /* Escondido por default */
+    position: fixed;
+    /* Se mantiene en su lugar*/
+    z-index: 1;
+    /* Se queda en el top */
+    padding-top: 100px;
+    /* Lugar donde se localiza la caja */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full */
+    height: 100%;
+    /* Full */
+    overflow: auto;
+    /* Scroll habilitado por si se necesita */
+    background-color: rgb(0, 0, 0);
+    /* Color de la caja trasera */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Negro con opacidad */
+}
+
+
+/* Contenido del modal (imagen) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* Botón para cerrar */
+
+.close {
+    text-align: right;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /*Footer*/
-footer{
-   text-align: center;
-   height: 70px;
+
+footer {
+    text-align: center;
+    height: 70px;
     background: #373B47;
     color: white;
     padding-top: 7px;
